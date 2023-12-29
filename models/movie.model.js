@@ -5,7 +5,8 @@ let movieSchema = new mongoose.Schema({
     director: {type: String},
     año: {type: String},
     duracion: {type: String},
-    genero: {type: String}
+    genero: {type: String},
+    img: {type: String}
 });
 /*
  nombre, director, año, duracion, genero 

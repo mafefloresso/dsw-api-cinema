@@ -54,8 +54,8 @@ exports.getMovieById = async (req, res) => {
 */
 exports.newMovie = async (req, res) => {
     try {
-        const { nombre, director, año, duracion, genero } = req.body;
-        const newMovie = new Movie({ nombre, director, año, duracion, genero });
+        const { nombre, director, año, duracion, genero, img } = req.body;
+        const newMovie = new Movie({ nombre, director, año, duracion, genero, img });
         await newMovie.save();
 
         return res.status(200).json(
